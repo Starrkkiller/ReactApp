@@ -1,0 +1,134 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #459DF5;
+  background: #fff;
+  border: 1px solid #fff;
+  border-radius: 0.25rem;
+  width: 8rem;
+  height: 1.5rem;
+}
+
+.button svg {
+  fill: #459DF5;
+  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+}
+
+.button_long, .button_medium, .button_short {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+}
+
+.button_long svg, .button_medium svg, .button_short svg {
+  fill: #459DF5;
+  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+}
+
+.button_long {
+  width: 7rem;
+  height: 2rem;
+  border-radius: 0.25rem;
+  color: #459DF5;
+}
+
+.button_long svg {
+  margin-right: 0.5rem;
+}
+
+.button_medium {
+  width: 5.5rem;
+  height: 2rem;
+  color: #459DF5;
+  border-radius: 0.25rem;
+}
+
+.button_short {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.25rem;
+}
+
+.button_long:hover, .button_medium:hover, .button_short:hover {
+  border: 1px solid #459DF5;
+  background: #459DF5;
+  color: #fff;
+  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+}
+
+.button_long:hover svg, .button_medium:hover svg, .button_short:hover svg {
+  fill: #fff;
+  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+}
+
+.button_long-smaller{
+  width: 5.75rem;
+  height: 1.5rem;
+  border-radius: 0.25rem;
+  color: #459DF5;
+}
+
+.buttons_small .button_long svg {
+  margin-right: 0.5rem;
+}
+
+.button_medium-smaller {
+  width: 4.5rem;
+  height: 1.5rem;
+  color: #459DF5;
+  border-radius: 0.25rem;
+}
+
+.button_short-smaller {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.button_colored {
+  border: 1px solid #459DF5;
+  background: #459DF5;
+  color: #fff !important;
+  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+  margin-bottom: 1rem;
+}
+
+.button_colored svg, .button_colored svg, .button_colored svg {
+  fill: #fff;
+  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+}
+
+.button:hover {
+  color: #fff;
+  background: #459DF5;
+  border: 1px solid #459DF5;
+  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+}
+
+.button:hover svg {
+  fill: #fff;
+  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+}
+
+.button_black {
+  color: #000;
+}
+
+.button_black:hover {
+  background: #000;
+  color: #fff;
+  border-color: transparent;
+}
+
+.button_black svg {
+  fill: #000;
+  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+}
+
+.theme-button__theme_position {
+  width: 8rem;
+  height: 1.5rem;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}

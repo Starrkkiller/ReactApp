@@ -1,0 +1,218 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #459DF5;
+  background: #fff;
+  border: 1px solid #fff;
+  border-radius: 0.25rem;
+  width: 8rem;
+  height: 1.5rem;
+}
+
+.button svg {
+  fill: #459DF5;
+  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+}
+
+.button:hover {
+  color: #fff;
+  background: #459DF5;
+  border: 1px solid #459DF5;
+  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+}
+
+.button:hover svg {
+  fill: #fff;
+  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+}
+
+.page {
+  background: #FFFFFF;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 2px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+  width: 10rem;
+  height: 5.5rem;
+  margin: 1rem 0;
+}
+
+.page__info {
+  text-align: left;
+}
+
+.page__area {
+  border: 1px solid #459DF5;
+  width: 8rem;
+  height: 2rem;
+  display: block;
+  text-align: left;
+  margin-top: 0.5rem;
+  border: 1px solid #459DF5;
+  border-radius: 0.25rem;
+  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+  padding-left: 0.5rem;
+} 
+
+.page__area {
+  border-color: #BAD8F5;
+}
+
+.page__area::-webkit-input-placeholder {
+  color: #BAD8F5;
+} 
+
+.page__area::-webkit-input-placeholder:hover {
+  color: #000;
+} 
+
+.page__area::-moz-placeholder {
+  color: #BAD8F5;
+}
+
+.page__area::-webkit-input-placeholder:hover {
+  color: #000;
+} 
+
+.page__area:focus-visible {
+  outline: none;
+  border: 1px solid #459DF5;
+  border-radius: 0.25rem;
+  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+}
+
+.button-theme__theme-choice {
+  background: #FFFFFF;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 2px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+  position: absolute;
+  top: 115%;
+  left: -21%;
+}
+
+.themes:hover .button-theme__theme-choice {
+  display: block;
+}
+
+.themes:active .button-theme__theme-choice {
+  display: block;
+}
+
+.button-theme__theme-choice:hover {
+  display: block !important;
+}
+
+.button-theme__title, .delete-choice__title, .theme-choice__title {
+  display: block;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+.button__theme_position {
+  width: 8rem;
+  height: 1.5rem;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.theme-button__theme_position {
+  width: 8rem;
+  height: 1.5rem;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.button__theme_position:last-child {
+  margin-bottom: 0;
+}
+
+.button__theme_position svg {
+  margin-right: calc(var(--index) * 0.17);
+}
+
+.button__theme_colored {
+  background-color: #459DF5;
+  color: #fff;
+  border: 1px solid #459DF5;
+}
+
+.button__theme_colored svg {
+  fill: #fff;
+}
+
+.theme-choice {
+  background: #FFFFFF;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 2px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+  width: 10rem;
+  height: 7rem;
+}
+
+.theme-choice a {
+  margin-top: 0.5rem;
+}
+
+.delete-choice {
+  background: #FFFFFF;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 2px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+  width: 10rem;
+  height: 7rem;
+  margin-top: 1rem;
+}
+
+.delete-choice__button  {
+  margin-top: 0.5rem;
+}
+
+.type {
+  margin: 2rem 0rem;
+  width: 10rem;
+  height: 13rem;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 2px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+.checkbox__title {
+  display: block;
+}
+
+.type__item {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0 0.5rem 1rem;
+  position: relative;
+}
+
+.type__item:first-child {
+  padding-top: 0.5rem;
+}
+
+.type__item svg {
+  position: absolute;
+}
+
+.checkbox__title {
+  font-size: 0.82rem;
+}
+
+.dropdowns__radio {
+  appearance: none;
+}
+
+.dropdowns__radio:checked + .dropdowns__radio-title {
+  color: #459DF5;
+}
+
+.dropdowns__radio-title {
+  color: #000;
+}
