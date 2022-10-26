@@ -1,0 +1,113 @@
+.input__parameters {
+  text-align: center;
+  width: 16rem;
+  height: 4rem;
+  margin: 1rem 0;
+  position: relative;
+}
+
+.input__parameters_closing .input__area {
+  border-color: #F53152;
+}
+
+.input__parameters_closing .input__area:focus-visible {
+  border-color: #F53152;
+}
+
+.input__info {
+  text-align: left;
+  display: block;
+}
+
+.input__info:disabled {
+  border-color: #BAD8F5;
+}
+
+.input__area {
+  border: 1px solid #459DF5;
+  width: 16rem;
+  height: 2rem;
+  display: block;
+  text-align: left;
+  padding-left: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #459DF5;
+  border-radius: 0.25rem;
+  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+} 
+
+.input__area:disabled {
+  border-color: #BAD8F5;
+}
+
+.input__area::-webkit-input-placeholder {
+  color: #BAD8F5;
+} 
+
+.input__area::-webkit-input-placeholder:hover {
+  color: #000;
+} 
+
+.input__area::-moz-placeholder {
+  color: #BAD8F5;
+}
+
+.input__area::-webkit-input-placeholder:hover {
+  color: #000;
+} 
+
+.input__area:focus-visible {
+  outline: none;
+  border: 1px solid #459DF5;
+  border-radius: 0.25rem;
+  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+}
+
+.input__parameters_disabled, .input__area:visited {
+  background: #BAD8F5;
+}
+
+.input__parameters_disabled::-webkit-input-placeholder {
+  color: #000;
+} 
+
+.input__parameters_disabled::-webkit-input-placeholder:hover {
+  color: #000;
+} 
+
+.input__parameters_disabled::-moz-placeholder {
+  color: #000;
+}
+
+.input__parameters_disabled::-webkit-input-placeholder:hover {
+  color: #000;
+} 
+
+.input__parameters_disabled:focus-visible {
+  border-color: #459DF5;
+}
+
+.input__btn {
+  background: url(../images/svg/x-medium.svg);
+  position: absolute;
+  left: 90%;
+  top: 49%;
+  cursor: pointer;
+}
+
+.input__parameters_locked::after {
+    content: url(../images/svg/locked.svg);
+    position: absolute;
+    left: 90%;
+    top: 49%;
+    cursor: pointer;
+}
+
+.input__btn_for-search {
+  position: absolute;
+  left: 90%;
+  top: 25%;
+  cursor: pointer;
+  width: 1rem;
+  height: 1rem;
+}

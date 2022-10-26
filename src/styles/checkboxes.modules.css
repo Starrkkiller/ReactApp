@@ -1,0 +1,47 @@
+.checkbox-example__item:first-child {
+  margin-bottom: 3rem;
+}
+
+.checkbox_circle {
+  appearance: none;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid #BAD8F5;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+}
+
+.checkbox_circle:checked {
+  background-color: #fff;
+  border: 4px solid #459DF5;
+  transition: all 0.1s ease;
+}
+
+.checkbox-example__item .checkbox_square::after {
+  content: url(../images/svg/checkmark.svg);
+}
+
+.checkbox_square {
+  appearance: none;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid #BAD8F5;
+  background-color: #fff;
+  border-radius: 0.125rem;
+  margin-right: 0.5rem;
+  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+}
+
+.checkbox_square:checked {
+  background-color: #459DF5;
+  border: 1px solid #459DF5;
+  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+}
+
+.checkbox_square:checked + .checkbox__title {
+  color: #459DF5;
+}
