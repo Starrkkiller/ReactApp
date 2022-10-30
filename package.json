@@ -21,6 +21,7 @@
     "lint": "eslint --debug src/",
     "lint:write": "eslint --debug src/ --fix",
     "prettier": "prettier --write src/**/*.js",
+    "prettier-jxs": "prettier --write src/**/*.jsx",
     "prepare": "husky install"
   },
   "eslintConfig": {

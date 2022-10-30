@@ -1,0 +1,134 @@
+.transparentInput {
+  display: block;
+  text-align: left;
+  padding-left: 0.5rem;
+  border: 1px solid #459DF5;
+  border-radius: 0.25rem;
+  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+}
+
+.blue {
+  border-color: #459DF5;
+}
+
+.blue:focus-visible {
+  border-color: #459DF5;
+}
+
+.red {
+  border-color: #F53152;
+}
+
+.red:focus-visible {
+  border-color: #F53152;
+}
+
+._info {
+  text-align: left;
+  display: block;
+  position: relative;
+}
+
+._info:disabled {
+  border-color: #BAD8F5;
+}
+
+.long {
+  width: 12rem;
+  height: 2rem;
+}
+
+.medium {
+  width: 8.875rem;
+  height: 2rem;
+}
+
+.short {
+  width: 7.875rem;
+  height: 2rem;
+}
+
+._area {
+  border: 1px solid #459DF5;
+  display: block;
+  text-align: left;
+  padding-left: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #459DF5;
+  border-radius: 0.25rem;
+  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+} 
+
+._area:disabled {
+  border-color: #BAD8F5;
+}
+
+._area::-webkit-input-placeholder {
+  color: #BAD8F5;
+} 
+
+._area::-webkit-input-placeholder:hover {
+  color: #000;
+} 
+
+._area::-moz-placeholder {
+  color: #BAD8F5;
+}
+
+._area::-webkit-input-placeholder:hover {
+  color: #000;
+} 
+
+._area:focus-visible {
+  outline: none;
+  border: 1px solid #459DF5;
+  border-radius: 0.25rem;
+  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+}
+
+._parameters_disabled, ._area:visited {
+  background: #BAD8F5;
+}
+
+._parameters_disabled::-webkit-input-placeholder {
+  color: #000;
+} 
+
+._parameters_disabled::-webkit-input-placeholder:hover {
+  color: #000;
+} 
+
+._parameters_disabled::-moz-placeholder {
+  color: #000;
+}
+
+._parameters_disabled::-webkit-input-placeholder:hover {
+  color: #000;
+} 
+
+._parameters_disabled:focus-visible {
+  border-color: #459DF5;
+}
+
+._btn {
+  position: absolute;
+  left: 90%;
+  top: 49%;
+  cursor: pointer;
+}
+
+._parameters_locked::after {
+    position: absolute;
+    left: 90%;
+    top: 49%;
+    cursor: pointer;
+}
+
+._btn_for-search {
+  position: absolute;
+  left: 90%;
+  top: 25%;
+  cursor: pointer;
+  width: 1rem;
+  height: 1rem;
+}
