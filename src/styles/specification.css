@@ -27,6 +27,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	padding: 2rem 3rem 0 3rem;
 }
 ol, ul {
 	list-style: none;
@@ -76,6 +77,10 @@ a {
   transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
 }
 
+label {
+	position: relative;
+}
+
 svg {
   width: 1rem;
 }
@@ -98,3 +103,4 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 	--index: (1vw + 1vh);
 	--gap: 1em;
 }
+

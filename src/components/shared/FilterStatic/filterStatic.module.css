@@ -1,0 +1,112 @@
+.Filter {
+  display:flex;
+  justify-content: space-between;
+}
+
+.Searchbar {
+  display:flex;
+}
+
+.leftMargin {
+  margin-left: 1rem;
+}
+
+._ {
+  padding: 1rem;
+  background: #EBF0F5;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: flex-end;
+  margin: 1rem 0 2rem;
+  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+}
+
+.inputContainer {
+  position: relative;
+}
+
+.statusInput{
+  width: 12rem;
+  margin: 0.5rem 1rem 0 0;
+  position: relative;
+}
+
+.priceFromInput {
+  width: 8.875rem;
+  margin-top: 0.5rem;
+  margin-right: 0.25rem;
+  padding-left: 1.5rem;
+  position: relative
+}
+
+.priceToInput{
+  width: 8.875rem;
+  margin-right: 1rem;
+  padding-left: 1.5rem;
+  position: relative
+}
+
+.dateFromInput{
+  width: 7.875rem;
+  margin-top: 0.5rem;
+  margin-right: 0.25rem;
+  padding-left: 1.1rem;
+  position: relative
+}
+
+.dateToInput{
+  width: 7.875rem;
+  margin-right: 1rem;
+  padding-left: 1.5rem;
+  position: relative
+}
+
+.priceFromInput:focus-visible {
+  padding-left: 1.5rem;
+}
+
+.priceToInput:focus-visible {
+  padding-left: 1.5rem;
+}
+
+.dateFromInput:focus-visible {
+  padding-left: 1.1rem;
+}
+
+.dateToInput:focus-visible {
+  padding-left: 1.5rem;
+}
+
+.statusInputIcon {
+  position: absolute;
+  top: 57%;
+  left: 80%;
+}
+
+.dateInputFromIcon {
+  z-index: 1;
+  position: absolute;
+  top: 24%;
+  left: 79%;
+}
+
+.dateInputToIcon {
+  z-index: 1;
+  position: absolute;
+  top: 24%;
+  left: 72%;
+}
+
+.sumInputFromIcon {
+  z-index: 1;
+  position: absolute;
+  top: 27%;
+  left: 79%;
+}
+
+.sumInputToIcon {
+  z-index: 1;
+  position: absolute;
+  top: 27%;
+  left: 74%;
+}

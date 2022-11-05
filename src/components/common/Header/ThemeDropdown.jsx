@@ -1,9 +1,9 @@
-import { Icon } from "./Icon";
-import { Button } from "./Button";
-import { ButtonHeight } from "../common/Button";
-import { ButtonWidth } from "../common/Button";
-import { ButtonColor } from "../common/Button";
-import styles from "../../styles/heading.module.css";
+import { Icon } from "../Icon/Icon";
+import { Button } from "../Button/Button";
+import { ButtonHeight } from "../Button/Button";
+import { ButtonWidth } from "../Button/Button";
+import { ButtonColor } from "../Button/Button";
+import styles from "./heading.module.css";
 
 export const ThemeDropdown = () => {
   const LigthThemeButtonIcon = <Icon name="sun"></Icon>;

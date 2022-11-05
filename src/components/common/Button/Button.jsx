@@ -1,4 +1,4 @@
-import styles from "../../styles/buttons.module.css";
+import styles from "./buttons.module.css";
 import classnames from "classnames";
 
 export const ButtonWidth = {
@@ -27,6 +27,7 @@ export const Button = ({
   height,
   width,
   color,
+  onClick,
   ...props
 }) => {
   const buttonClassName = classnames(styles._, className, {
@@ -43,7 +44,12 @@ export const Button = ({
   });
 
   return (
-    <button type={type} className={buttonClassName} {...props}>
+    <button
+      type={type}
+      className={buttonClassName}
+      {...props}
+      onClick={onClick}
+    >
       {prefix}
       {children}
       {postfix}

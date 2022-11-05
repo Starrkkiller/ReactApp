@@ -1,8 +1,24 @@
 .transparentInput {
+  height: 2rem;
+  outline: none;
   display: block;
   text-align: left;
   padding-left: 0.5rem;
   border: 1px solid #459DF5;
+  border-radius: 0.25rem;
+  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+}
+
+.inputContainer {
+  position: relative;
+  height: 2rem;
+}
+
+.transparentInput:focus-visible {
+  border-color: #F53152;
+  display: block;
+  text-align: left;
+  padding-left: 0.5rem;
   border-radius: 0.25rem;
   transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
 }
@@ -31,21 +47,6 @@
 
 ._info:disabled {
   border-color: #BAD8F5;
-}
-
-.long {
-  width: 12rem;
-  height: 2rem;
-}
-
-.medium {
-  width: 8.875rem;
-  height: 2rem;
-}
-
-.short {
-  width: 7.875rem;
-  height: 2rem;
 }
 
 ._area {
@@ -131,4 +132,17 @@
   cursor: pointer;
   width: 1rem;
   height: 1rem;
+}
+
+.prefix {
+  position: absolute;
+  bottom: 23%;
+  left: 5%;
+  z-index: 1;
+}  
+
+.inputIcon {
+  width: 3rem;
+  height: 3rem;
+  z-index: 1;
 }

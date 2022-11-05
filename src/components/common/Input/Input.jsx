@@ -1,7 +1,7 @@
-import styles from "../../styles/input.module.css";
+import React, { useState } from "react";
+import styles from "./input.module.css";
 import classnames from "classnames";
-
-export const InputSize = {
+export const InputWidth = {
   long: "long",
   medium: "medium",
   short: "short",
@@ -18,28 +18,33 @@ export const Input = ({
   className,
   prefix,
   postfix,
-  size,
   color,
   placeholder,
   value,
+  icon,
+  iconType,
+  iconClassName,
+  onChange,
   ...props
 }) => {
   const inputClassName = classnames(styles._, className, {
-    [styles.long]: size === InputSize.long,
-    [styles.medium]: size === InputSize.medium,
-    [styles.short]: size === InputSize.short,
-
     [styles.blue]: color === InputColor.blue,
     [styles.red]: color === InputColor.red,
     [styles.transparentInput]: color === InputColor.transparent,
   });
 
+  const [sum, setSum] = useState("");
+
   return (
-    <input
-      className={inputClassName}
-      type={type}
-      placeholder={placeholder}
-      value={value}
-    ></input>
+    <div className={styles.inputContainer}>
+      {prefix && <div className={styles.prefix}>{prefix}</div>}
+      <input
+        className={inputClassName}
+        type={type}
+        placeholder={placeholder}
+        onChange={onChange}
+      ></input>
+      {!!value && icon}
+    </div>
   );
 };
