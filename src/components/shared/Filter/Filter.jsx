@@ -6,22 +6,33 @@ import { ButtonColor } from "../../common/Button/Button";
 import { Searchbar } from "../../common/Searchbar/Searchbar";
 import { Icon } from "../../common/Icon/Icon";
 import { Label } from "../../common/Label/Label";
-import { Input, InputColor } from "../../common/Input/Input";
-import styles from "./filterStatic.module.css";
-import classnames from "classnames";
+import { Input } from "../../common/Input/Input";
+import { Dropdown } from "../../common/Dropdown/Dropdown";
+import styles from "./filter.module.css";
 
-export const FilterStatic = ({ children, type = "button" }) => {
+export const Filter = ({ children, type = "button" }) => {
   const FilterButtonIcon = <Icon name="filter"></Icon>;
   const RefreshButtonIcon = <Icon name="refresh"></Icon>;
 
-  const [visibleExtendedFilter, setvisibleExtendedFilter] = useState(false);
+  const [visibleExtendedFilter, setVisibleExtendedFilter] = useState(false);
+  const [visibleExtendedStatusDropdown, setVisibleExtendedStatusDropdown] =
+    useState(false);
 
-  const [data, setData] = useState("");
-  const iconVisibilityHandler = (e) => setData(e.target.value);
+  const [dateFrom, setDateFrom] = useState("");
+  const dateFromIcon = (e) => setDateFrom(e.target.value);
+
+  const [dateTo, setdateTo] = useState("");
+  const dateFromToIcon = (e) => setdateTo(e.target.value);
+
+  const [sumFrom, setsumFrom] = useState("");
+  const sumFromIcon = (e) => setsumFrom(e.target.value);
+
+  const [sumTo, setsumTo] = useState("");
+  const sumToIcon = (e) => setsumTo(e.target.value);
 
   return (
     <>
-      <div className={styles.Filter}>
+      <div className={styles.static}>
         <div className={styles.Searchbar}>
           <Searchbar></Searchbar>
           <Button
@@ -30,7 +41,7 @@ export const FilterStatic = ({ children, type = "button" }) => {
             height={ButtonHeight.big}
             color={ButtonColor.blue}
             prefix={FilterButtonIcon}
-            onClick={() => setvisibleExtendedFilter(!visibleExtendedFilter)}
+            onClick={() => setVisibleExtendedFilter(!visibleExtendedFilter)}
           >
             Фильтры
           </Button>
@@ -48,12 +59,12 @@ export const FilterStatic = ({ children, type = "button" }) => {
         </Button>
       </div>
       {visibleExtendedFilter ? (
-        <div className={styles._}>
+        <div className={styles.extended}>
           <Label
             control={
               <Input
-                value={data}
-                onChange={iconVisibilityHandler}
+                value={dateFrom}
+                onChange={dateFromIcon}
                 className={styles.dateFromInput}
                 type={"number"}
                 placeholder={"12.12.2022"}
@@ -71,8 +82,8 @@ export const FilterStatic = ({ children, type = "button" }) => {
             titleText={"Дата заказа"}
           ></Label>
           <Input
-            value={data}
-            onChange={iconVisibilityHandler}
+            value={dateTo}
+            onChange={dateFromToIcon}
             className={styles.dateToInput}
             type={"number"}
             placeholder={"12.12.2022"}
@@ -95,14 +106,25 @@ export const FilterStatic = ({ children, type = "button" }) => {
             }
             titleText={"Статус заказа"}
             postfix={
-              <Icon name={"down"} className={styles.statusInputIcon}></Icon>
+              <button
+                className={styles.statusInputIcon}
+                onClick={() =>
+                  setVisibleExtendedStatusDropdown(
+                    !visibleExtendedStatusDropdown
+                  )
+                }
+              >
+                <Icon name={"down"}></Icon>
+              </button>
             }
-          ></Label>
+          >
+            {!visibleExtendedStatusDropdown ? <Dropdown></Dropdown> : null}
+          </Label>
           <Label
             control={
               <Input
-                value={data}
-                onChange={iconVisibilityHandler}
+                value={sumFrom}
+                onChange={sumFromIcon}
                 className={styles.priceFromInput}
                 type={"number"}
                 placeholder={"6000"}
@@ -120,8 +142,8 @@ export const FilterStatic = ({ children, type = "button" }) => {
             titleText={"Сумма заказа"}
           ></Label>
           <Input
-            value={data}
-            onChange={iconVisibilityHandler}
+            value={sumTo}
+            onChange={sumToIcon}
             className={styles.priceToInput}
             type={"number"}
             placeholder={"70000"}

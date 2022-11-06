@@ -1,9 +1,9 @@
 import { Header } from "./components/shared/Header/Header";
-import { FilterStatic } from "./components/shared/FilterStatic/FilterStatic";
+import { Filter } from "./components/shared/Filter/Filter";
 
 export const App = () => (
   <>
     <Header />
-    <FilterStatic></FilterStatic>
+    <Filter></Filter>
   </>
 );
