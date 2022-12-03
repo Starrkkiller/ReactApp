@@ -1,7 +1,9 @@
-import { Header } from "./components/shared/Header";
+import { Header } from "./components/shared/Header/Header";
+import { Filter } from "./components/shared/Filter/Filter";
 
-function App() {
-  <Header></Header>;
-}
-
-export default App;
+export const App = () => (
+  <>
+    <Header />
+    <Filter></Filter>
+  </>
+);

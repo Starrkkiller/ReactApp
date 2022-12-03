@@ -1,0 +1,39 @@
+.checkboxCircle {
+  appearance: none;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid #BAD8F5;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+}
+
+.checkboxCircle:checked {
+  background-color: #fff;
+  border: 4px solid #459DF5;
+  transition: all 0.1s ease;
+}
+
+.checkboxSquare {
+  appearance: none;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid #BAD8F5;
+  background-color: #fff;
+  border-radius: 0.125rem;
+  margin-right: 0.5rem;
+  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+}
+
+.checkboxSquare:checked {
+  background-color: #459DF5;
+  border: 1px solid #459DF5;
+  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+}
+
+.checkboxSquare:checked + .checkboxTitle {
+  color: #459DF5;
+}
